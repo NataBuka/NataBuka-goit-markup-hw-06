@@ -76,12 +76,49 @@
         </section>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
+                
                 <button data-modal-close class="btn-close">
                     <svg class="close">
                     <use href="./images/sprite.svg#icon-close">
                     </use>
                     </svg>
                </button>
+
+        <form name="form" class="form js-speaker-form" autocomplete="on">
+
+        <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+
+        
+                <p class="form-item">
+                    <label class="form-label" for="name">Имя</label>
+                       <input class="form-input" type="text" name="user-name" id="name">
+                    </p>
+                </p>
+
+                <p class="form-item">
+                    <label class="form-label" for="tel">Телефон</label>
+                        <input class="form-input" type="tel" name="tel" id="tel">
+                </p>
+
+                <p class="form-item">
+                    <label class="form-label" for="email">Почта</label>
+                        <input class="form-input" type="email" name="email" id="email">
+                </p>
+
+        
+                <p class="form-item">
+                    <label class="form-label" for="koment">Комментарий</label>
+                        <input class="form-input" type="textarea" name="koment" id="koment" placeholder="Введите текст">
+                </p>
+
+                <p class="form-item">
+                    <label class="form-label" for="choice">Соглашаюсь с рассылкой и принимаю <a href="" class="">Условия договора</a></label>
+                        <input class="form-input" type="checkbox" name="choice" value="choice" id="choice"> 
+                </p>
+
+                        <button class="form-button" type="submit">Отправить</button>
+                    
+            </form>
 
             </div>
         </div>
@@ -427,6 +464,20 @@
         </div>
 
     </footer>
+    <script>
+        (()=> {
+            document
+        
+            .querySelector('.js-speaker-form')
+            addEventListener('submit', e => {
+                e.preventDefault();
+
+                new FormData(e.currentTarget).forEach((value,name) =>
+                console.log(`${name}:${value}`),
+                );
+            });
+        })();
+    </script>
    <!-- <script>
         const {height: headerHeight} = document
         .querySelector(".header")
