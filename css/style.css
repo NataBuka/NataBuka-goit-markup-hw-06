@@ -272,6 +272,7 @@ img {
   font-family: inherit;
   color: var(--wite-color);
   background-color: var(--brand-color);
+  border: var(--brand-color);
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
@@ -839,11 +840,18 @@ img {
   outline: 1px dashed red;
   margin-left: auto;
   margin-right: auto;
-  padding: 40px 32px;
+  padding: 32px;
 }
 .form-title {
   margin-bottom: 20px;
+  color: var(--black-color);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
+
 .form-item {
   outline: 1px solid blue;
   margin-bottom: 10px;
@@ -856,4 +864,22 @@ img {
 }
 .form-item label {
   margin-bottom: 4px;
+}
+.form-item input::placeholder {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  text-align: left;
+}
+.form-button {
+  padding: 10px 56px;
+  margin-top: 30px;
+  color: var(--wite-color);
+  background-color: var(--brand-color);
+  border: #2196f3;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+  text-align: center;
 }
