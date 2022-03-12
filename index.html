@@ -84,37 +84,54 @@
                     </svg>
                </button>
 
-        <form name="form" class="form js-speaker-form" autocomplete="on">
+             <form name="form" class="form js-speaker-form" autocomplete="on">
 
-        <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+             <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
 
-        
-                <p class="form-item">
+            
+
                     <label class="form-label" for="name">Имя</label>
-                       <input class="form-input" type="text" name="user-name" id="name">
-                    </p>
-                </p>
+                <div class="form-hover">
+                <div class="form-item">
+                    <svg class="image">
+                        <use href="./images/sprite.svg#icon-person" class="form-img"> </use>
+                    </svg>
+                       <input class="form-input" type="text" name="user-name" id="name">  
+                </div>
+                </div>
 
-                <p class="form-item">
-                    <label class="form-label" for="tel">Телефон</label>
+                <div class="form-hover">
+                   <label class="form-label" for="tel">Телефон</label>
+                <div class="form-item">
+                    <svg class="image">
+                        <use href="./images/sprite.svg#icon-phone"></use>
+                    </svg>
                         <input class="form-input" type="tel" name="tel" id="tel">
-                </p>
+                </div>
+                </div>
 
-                <p class="form-item">
+                <div class="form-hover">
                     <label class="form-label" for="email">Почта</label>
+                <div class="form-item">
+                    <svg class="image">
+                        <use href="./images/sprite.svg#icon-mail"></use>
+                    </svg>
                         <input class="form-input" type="email" name="email" id="email">
-                </p>
+                </div>
+                </div>
 
-        
-                <p class="form-item">
-                    <label class="form-label" for="koment">Комментарий</label>
-                        <input class="form-input" type="textarea" name="koment" id="koment" placeholder="Введите текст">
-                </p>
+                <div class="form-hover">
+                <div class="form-item-koment">
+                    <label class="form-label-koment" for="koment">Комментарий</label>
+                        <input class="form-input-koment" type="textarea" name="koment" id="koment" placeholder="Введите текст">
+                </div>
+                </div>
 
-                <p class="form-item">
-                    <label class="form-label" for="choice">Соглашаюсь с рассылкой и принимаю <a href="" class="">Условия договора</a></label>
-                        <input class="form-input" type="checkbox" name="choice" value="choice" id="choice"> 
-                </p>
+                <div class="form-item-chek">
+                    <input class="form-input-chek" type="checkbox" name="choice" value="choice" id="choice">
+                    <label class="form-label" for="choice">Соглашаюсь с рассылкой и принимаю <a href="" class="chek-email">Условия договора</a></label>
+                        
+                </div>
 
                         <button class="form-button" type="submit">Отправить</button>
                     
@@ -464,20 +481,6 @@
         </div>
 
     </footer>
-    <script>
-        (()=> {
-            document
-        
-            .querySelector('.js-speaker-form')
-            addEventListener('submit', e => {
-                e.preventDefault();
-
-                new FormData(e.currentTarget).forEach((value,name) =>
-                console.log(`${name}:${value}`),
-                );
-            });
-        })();
-    </script>
    <!-- <script>
         const {height: headerHeight} = document
         .querySelector(".header")
