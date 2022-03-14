@@ -868,11 +868,12 @@ img {
 }
 
 .form-label {
-font-size: 12px;
+font-size: 14px;
 font-weight: 400;
-line-height: 1.17;
-letter-spacing: 0.01em;
+line-height: 1.71;
+letter-spacing: 0.03em;
 text-align: left;
+
 }
 
 .form-item {
@@ -916,6 +917,9 @@ text-align: left;
 }
 .form-input-chek {
   margin-right: 8px;
+  width: 16px;
+  height: 15px;
+  
 }
 .chek-email {
   text-decoration: underline;
