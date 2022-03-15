@@ -20,6 +20,7 @@
   --btn-close-border-color: rgba(0, 0, 0, 0.1);
   --label-color: rgba(47, 48, 58, 0.8);
   --card-overley: rgba(33, 150, 243, 0.9);
+  --placeholder: rgba(117, 117, 117, 0.5);
 }
 
 /*   reset  */
@@ -567,7 +568,7 @@ img {
 .footer-relations {
   margin-right: 70px;
 }
-
+.footer-form-title,
 .footer-headline {
   color: var(--wite-color);
   text-transform: uppercase;
@@ -576,6 +577,42 @@ img {
   line-height: 1.14;
   text-align: left;
   margin-bottom: 20px;
+}
+
+.footer-icon {
+  position: absolute;
+  top: 0;
+  right: 29px;
+  transform: translateY(50%);
+  width: 24px;
+  height: 24px;
+  fill: var(--wite-color);
+  outline: 5px dashed green;
+}
+
+.footer-form-img {
+  /* position: absolute;
+  top: 0;
+  left: 0;*/
+  width: 24px;
+  height: 24px;
+  fill: var(--wite-color);
+  background-size: contain;
+}
+
+.footer-form-btn {
+  position: relative;
+  padding: 10px;
+  width: 200px;
+  height: 50px;
+  background-color: var(--brand-color);
+  border: 1px solid var(--brand-color);
+  border-radius: 4px;
+  color: var(--wite-color);
+}
+
+.footer-div {
+  margin-right: 94px;
 }
 
 .footer-imail-li:not(:last-child) {
@@ -630,6 +667,15 @@ img {
   background-color: var(--brand-color);
   border-radius: 50%;
 }
+/* {
+  color: var(--wite-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: left;
+  margin-bottom: 20px;
+}*/
 /*footer finish */
 
 /* portfolio carts */
@@ -839,7 +885,7 @@ img {
 
 .form {
   width: 528px;
-  height: 581px;
+  /* height: 581px;*/
   margin-left: auto;
   margin-right: auto;
   padding: 40px;
@@ -895,6 +941,10 @@ img {
   bottom: 50%;
 }
 
+textarea {
+  resize: none;
+}
+
 .form-item input {
   margin: 0;
   padding: 11;
@@ -902,11 +952,11 @@ img {
 .form-item label {
   margin-bottom: 4px;
 }
-.form-item input::placeholder {
+.form-item-koment .form-input-koment::placeholder {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.14;
-  text-align: left;
+  justify-content: start;
 }
 
 .form-item-chek {
@@ -915,6 +965,9 @@ img {
   align-items: center;
   margin-bottom: 30px;
 }
+.form-item-chek .form-label {
+  margin-bottom: 4px;
+}
 .form-input-koment {
   cursor: pointer;
   width: 448px;
@@ -922,6 +975,12 @@ img {
   margin-bottom: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: var(--placeholder);
 }
 .form-input-chek {
   margin-right: 8px;

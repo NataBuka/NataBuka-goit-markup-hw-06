@@ -123,7 +123,7 @@
                 <div class="form-hover">
                 <div class="form-item-koment">
                     <label class="form-label" for="koment">Комментарий</label>
-                        <input class="form-input-koment" type="textarea" name="koment" id="koment" placeholder="Введите текст">
+                        <textarea class="form-input-koment"  placeholder="Введите текст"  type="textarea" name="koment" id="koment"></textarea>
                 </div>
                 </div>
 
@@ -427,6 +427,7 @@
     <footer class="footer">
 
         <div class="wrapper relations">
+
             <div class="footer-relations">
                 <a href="./index.html" class="footer-logo link">
                     Web<span class="footer-brand">Studio</span>
@@ -479,8 +480,17 @@
                         </li>
                     </ul>
             </div>
+            <form class="footer-form">
+                <h3 class="footer-form-title">Подпишитесь на рассылку</h3>
+                <label class="label-e-mail" for="e-mail">E-mail</label>
+                <input type="text" name="e-mail" id="e-mail">
+                <button class="footer-form-btn" type="submit">Подписаться<svg class="footer-icon">
+                    <use class="footer-form-img" href="./images/sprite.svg#icon-telegram"></use>
+                </svg></button>
+               
+            </form>
         </div>
-
+   
     </footer>
     <script>
         (() => {
@@ -491,7 +501,8 @@
 
              new FormData(e.currentTarget).forEach((value, name) =>
              console.log(`${name}: ${value}`),
-             );   
+             );   e.currentTarget.reset();
+               
             });
         })();
     </script>
