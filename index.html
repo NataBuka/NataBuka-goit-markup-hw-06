@@ -84,41 +84,45 @@
                     </svg>
                </button>
 
-             <form name="form" class="form js-speaker-form" autocomplete="on">
+             <form name="form" class="form js-speaker-form" autocomplete="off">
 
              <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
 
                 
-               <div class="form-hover">
+            <div class="form-hover"> 
+                    
                     <label class="form-label" for="name">Имя</label>
-                
-                <div class="form-item">
+                    <input class="form-input" type="text" name="user-name" id="name" placeholder=" ">
+        <!--      <div class="form-item"> -->
+                   
+                    
                     <svg class="image">
                         <use href="./images/sprite.svg#icon-person" class="form-img"> </use>
                     </svg>
-                    <input class="form-input" type="text" name="user-name" id="name">  
-                </div>
-                </div>
+            </div> 
+        <!--        </div>-->
 
-                <div class="form-hover">
+            <div class="form-hover">
                    <label class="form-label" for="tel">Телефон</label>
-                <div class="form-item">
+        <!--       <div class="form-item">-->
+                    
+                    <input class="form-input" type="tel" name="tel" id="tel" placeholder=" ">
                     <svg class="image">
                         <use href="./images/sprite.svg#icon-phone"></use>
                     </svg>
-                        <input class="form-input" type="tel" name="tel" id="tel">
-                </div>
-                </div>
+                        <!--        </div>-->
+            </div>
 
-                <div class="form-hover">
+            <div class="form-hover">
                     <label class="form-label" for="email">Почта</label>
-                <div class="form-item">
+        <!--       <div class="form-item">-->
+                    
+                    <input class="form-input" type="email" name="email" id="email" placeholder=" ">
                     <svg class="image">
                         <use href="./images/sprite.svg#icon-mail"></use>
                     </svg>
-                        <input class="form-input" type="email" name="email" id="email">
-                </div>
-                </div>
+                    <!--       </div>-->
+            </div>
 
                 <div class="form-hover">
                 <div class="form-item-koment">
@@ -490,7 +494,7 @@
                         </li>
                     </ul>
             </div>
-        <form class="footer-form">
+        <form class="footer-form" autocomplete="off">
             <div class="div-ftr">
             <h3 class="footer-form-title">Подпишитесь на рассылку</h3>
             <div class="footer-lbl"> 
