@@ -178,6 +178,7 @@ img {
 .link-icon {
   fill: var(--basc-text-color);
   margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact:focus .link-icon,
 .contact:hover .link-icon {
@@ -471,7 +472,7 @@ img {
   color: var(--border-klient-color);
   justify-content: center;
   align-items: center;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-imail {
@@ -507,7 +508,8 @@ img {
   border-radius: 4px;
   background-position: center;
   color: var(--border-klient-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:not(:last-child) {
@@ -626,6 +628,7 @@ img {
   color: var(--wite-color);
   border-radius: 4px;
   background-color: var(--light-black-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .f-f-input:not(:placeholder-shown) + .label-e-mail,
@@ -778,10 +781,6 @@ img {
   flex-basis: calc(100%-3 * 30) / 3;
 }
 
-.filter-item {
-  position: relative;
-}
-
 /* buttons */
 
 .filter-buttom {
@@ -820,7 +819,6 @@ img {
 }
 
 .filter-item {
-  background-color: var(--wite-color);
   position: relative;
 }
 .flt-imail {
@@ -841,11 +839,7 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.filter-item:hover,
-.filter-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -882,11 +876,14 @@ img {
   height: 100%;
 
   background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
 
 .modal {
@@ -910,6 +907,7 @@ img {
   background-color: var(--wite-color);
   border-radius: 50%;
   cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close {
@@ -1026,6 +1024,7 @@ textarea {
   letter-spacing: 0.01em;
   text-align: left;
   color: var(--placeholder);
+  transition: border-color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .chek-email {
