@@ -1065,7 +1065,7 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
 }
-.form-input-chek:hover + .checkbox-icon {
+.form-input-chek:focus + .checkbox-icon {
   border-color: var(--brand-color);
 }
 
